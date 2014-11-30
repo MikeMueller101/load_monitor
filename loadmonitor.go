@@ -17,8 +17,7 @@ import (
 )
 
 const debug = true
-const maxSizeCpuLoadQueue = 60 // == the cpu load over the past 10 minutes
-const simulateCpuLoad = true
+const maxSizeCpuLoadQueue = 60 // sets the max size of the cpuload queue, stores the cpu load over the past 10 minutes
 
 type Msg struct {
 	MessageId string
