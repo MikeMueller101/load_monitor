@@ -201,7 +201,7 @@ func (m *LoadMonitor) pushDataToClients() {
 			m.activeClients[newClient.clientIP] = newClient
 			m.sendQueueData(newClient.clientIP)
 
-		// broadcast a new CPU load to all clients
+		// broadcast a new CPU load message to all clients
 		case newCpuLoad := <-m.measureChan1:
 			msg := Msg{"Plot", FloatToString(newCpuLoad), time.Now().UnixNano() / int64(time.Millisecond)}
 			m.sendBroadcastMsg(&msg)
