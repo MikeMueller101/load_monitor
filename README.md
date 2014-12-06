@@ -1,6 +1,5 @@
 Create a simple web application that monitors load average on your machine:
-
-­- Collect the machine load (using “uptime” for example)
+- Collect the machine load (using "uptime" for example)
 ­- Display in the application the key statistics as well as a history of load over the past 10 minutes
 in 10s intervals. We’d suggest a graphical representation using D3.js, but feel free to use another
 tool or representation if you prefer. Make it easy for the end­user to picture the situation!
